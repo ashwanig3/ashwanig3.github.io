@@ -1,6 +1,6 @@
 ---
 layout: post
-title:  Functions
+title:  Javascript Functions:Introduction
 ---
 
 <style type="text/css">
