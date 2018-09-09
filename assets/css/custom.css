@@ -1,0 +1,373 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+
+/*```````````````````````````````````````````````````````````
+					main.css
+```````````````````````````````````````````````````````````````*/
+
+
+*{
+	box-sizing: border-box;
+	margin: 0;
+	padding: 
+}
+
+/*====================================
+Header
+====================================*/
+
+
+.hero__img{
+	width: 4rem;
+	height: 4rem;
+	border-radius: 50%;
+}
+.hero__img:hover{
+	transform: scale(1.1);
+}
+.top-navbar{
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	padding: 30px;
+	
+}
+
+
+.nav-menu{
+	display: flex;
+	justify-content: space-around;
+	padding: 20px;
+
+}
+.nav-menu__item a{
+	text-decoration: none;
+	color: white;
+	text-transform: uppercase;
+	font-size: 14px;
+	font-family: 'Luckiest Guy', cursive;
+}
+.nav-menu__item a:hover{
+	color: black;
+}
+.hero{
+	position: relative;
+	background-image: url(../../assets/media/3.JPG);
+	height: 100vh;
+	background-position: 60% 50%;
+	background-size: cover;
+	background-attachment: fixed;
+	background-blend-mode: overlay;
+}
+.info{
+	position: absolute;
+	left: 50%;
+	top: 50%;
+	transform: translate(-50%,-50%);
+}
+.name-heading{
+	font-size: 60px;
+	font-weight: 600;
+	font-family: 'Luckiest Guy', cursive;
+	letter-spacing: 0.21rem;
+	text-align: center;
+	color: teal;
+}
+.info__para{
+	text-align: center;
+	font-size: 1.5rem;
+	font-family: 'Luckiest Guy', cursive;
+
+}
+#toggle{
+	display: none;
+}
+
+/*====================================
+			main section
+====================================*/
+
+
+.about-me{
+	position: relative;
+	padding-top: 50px;
+}
+.user-me{
+	height: 8rem;
+	width: 8rem;
+	position: absolute;
+	left: 50%;
+	transform: translate(-50%);
+}
+.wrapper{
+	padding: 3rem;
+	margin: 0 auto;
+	width: 60%;
+	max-width: 1100px;
+	
+}
+.wrapper__header{
+	color: teal;
+	font-family: 'Luckiest Guy', cursive;
+	text-align: center;
+	font-size: 1.5rem;
+	margin-top: 7rem;
+}
+.wrapper__content{
+	text-align: center;
+	padding: 1.2rem;
+	word-spacing: 0.1rem;
+	font-weight: 500;
+	letter-spacing: 0.05rem;
+	line-height: 1.2rem;
+	font-family: 'Average Sans', sans-serif;
+}
+
+/*====================================
+			skill section
+====================================*/
+
+
+
+.skill__header{
+	margin-top: 3rem;
+}
+.skill__fig{
+	margin: 30px auto;
+	width: 52%;
+	padding: 0 4rem;
+
+}
+.skill__img{
+	height: 9rem;
+	width: 9rem;
+	margin: 10px;
+}
+
+
+
+/*====================================
+			project section
+====================================*/
+
+
+.project__header{
+	margin-top: 3rem
+}
+.project__gallery{
+	padding: 40px;
+	margin: 0 auto;
+	width: 90%;
+}
+.gallery__item{
+	width: 28%;
+	height: 50%;
+	margin: 20px;
+	transition: 0.5s ease-in-out;
+}
+.gallery__item:hover{
+	transform: scale(1.5);
+}
+
+.gallery__link{
+	color: teal;
+	font-size: 12px;
+}
+
+/*====================================
+			footer section
+====================================*/
+
+.contact{
+	background-color: teal;
+	height: 50vh; 
+	padding: 20px;
+}
+.contact__me {
+	margin: 50px auto;
+	width: 40%;
+}
+.contact__header{
+	color: black;
+	padding-bottom: 30px;
+}
+.contact__email{
+	text-align: center;
+}
+.contact__social{
+	text-align: center;
+}
+.social{
+	display: flex;
+	margin:1rem 0 0 7rem;
+	
+}
+.social__item a{
+	border-radius: 50%;
+	border:1px solid white;
+	color: white;
+	font-size: 1.5rem;
+	padding: 5px;
+	margin: 0 20px;
+}
+.contact__copyright{
+	text-align: center;
+	font-size: 12px;
+	margin-top: 20px;
+}
+
+
+
+@media screen and (min-width: 320px) and (max-width: 640px){
+	
+	.hero, .about-me, ..project, .skill, .contact{
+		width: auto;
+		float: none;
+	}
+	
+	.nav-menu{
+		display: none;
+	}
+	label{
+		display: block;
+	}
+	#toggle::checked + ul {
+		display: block;
+		background-color: white;
+		color:white;
+
+	}
+
+	.hero__img{
+		width: 3rem;
+		height: 3rem;
+	}
+	.top-navbar{
+		padding: 10px;
+		background-color: black;
+	}
+	.hero{
+		width: 100vw;
+		background-position: center;
+		background-size: contain;
+		background-repeat: no-repeat;
+		background-attachment: initial;
+		height: 70vh;
+	}
+	.name-heading{
+		font-size: 20px;
+		font-weight: 500;
+	}
+	.info__para{
+		font-size: .7rem;
+		word-spacing: 0.3rem;
+		font-weight: 100;
+	}
+	.about-me{
+		padding: 0;
+		height: 70vh;
+		position: relative;
+	}
+	.wrapper{
+		padding: 0;
+		width: 90%;
+		position: absolute;
+		left: 50%;
+		top: 60%;
+		transform: translate(-50%, -60%);
+	}
+	.user-me{
+		width: 6rem;
+		height: 6rem;
+	}
+	.wrapper__header{
+		margin: 20px;
+		font-size: 1rem;
+	}
+	.wrapper__content{
+		padding: 0;
+	}
+	.project__gallery{
+		padding: 0;
+	}
+	.gallery__item{
+	width: 40%;
+	height: 70%;
+	margin: 10px;
+	
+	}
+	.gallery__item:hover{
+		transform: none;
+	}
+	.skill__fig{
+	margin: 30px auto;
+	width: 90%;
+	padding: 0;
+
+	}
+	.skill__img{
+	height: 5rem;
+	width: 5rem;
+	margin: 0;
+	}
+	.contact__me {
+	margin:0;
+	width: 100%;
+	}
+	.social{
+	margin:1rem 0 0 2rem;
+	}
+	.contact__email,
+	.contact__social{
+		font-size: 12px;
+	}
+	.social__item a{
+		margin: 0 15px;
+	}
+}
