@@ -53,10 +53,8 @@ table {
 ```````````````````````````````````````````````````````````````*/
 
 
-*{
+*, *:before, *:after {
 	box-sizing: border-box;
-	margin: 0;
-	padding: 
 }
 
 /*====================================
@@ -64,15 +62,16 @@ Header
 ====================================*/
 
 
-.hero__img{
+.hero__img {
 	width: 4rem;
 	height: 4rem;
 	border-radius: 50%;
+	transition: transform 0.3s ease-in-out;
 }
-.hero__img:hover{
-	transform: scale(1.1);
+.hero__img:hover {
+	transform: scale(1.2);
 }
-.top-navbar{
+.top-navbar {
 	display: grid;
 	grid-template-columns: 1fr 1fr;
 	padding: 30px;
@@ -80,23 +79,24 @@ Header
 }
 
 
-.nav-menu{
+.nav-menu {
 	display: flex;
 	justify-content: space-around;
 	padding: 20px;
 
 }
-.nav-menu__item a{
+.nav-menu__item a {
 	text-decoration: none;
 	color: white;
 	text-transform: uppercase;
 	font-size: 14px;
 	font-family: 'Luckiest Guy', cursive;
 }
-.nav-menu__item a:hover{
+.nav-menu__item a:hover {
 	color: black;
+	transition: 0.3s ease-in-out;
 }
-.hero{
+.hero {
 	position: relative;
 	background-image: url(../../assets/media/3.JPG);
 	height: 100vh;
@@ -105,27 +105,28 @@ Header
 	background-attachment: fixed;
 	background-blend-mode: overlay;
 }
-.info{
+.info {
 	position: absolute;
 	left: 50%;
 	top: 50%;
 	transform: translate(-50%,-50%);
 }
-.name-heading{
+.name-heading {
 	font-size: 60px;
 	font-weight: 600;
 	font-family: 'Luckiest Guy', cursive;
-	letter-spacing: 0.21rem;
+	letter-spacing: 0.3rem;
 	text-align: center;
 	color: teal;
+	text-shadow: 5px 5px black;
 }
-.info__para{
+.info__para {
 	text-align: center;
 	font-size: 1.5rem;
 	font-family: 'Luckiest Guy', cursive;
 
 }
-#toggle{
+#toggle {
 	display: none;
 }
 
@@ -134,32 +135,33 @@ Header
 ====================================*/
 
 
-.about-me{
+.about-me {
 	position: relative;
 	padding-top: 50px;
 }
-.user-me{
+.user-me {
 	height: 8rem;
 	width: 8rem;
 	position: absolute;
 	left: 50%;
 	transform: translate(-50%);
 }
-.wrapper{
+.wrapper {
 	padding: 3rem;
 	margin: 0 auto;
 	width: 60%;
 	max-width: 1100px;
 	
 }
-.wrapper__header{
+.wrapper__header {
 	color: teal;
 	font-family: 'Luckiest Guy', cursive;
 	text-align: center;
 	font-size: 1.5rem;
 	margin-top: 7rem;
+	text-shadow: 1px 1px black;
 }
-.wrapper__content{
+.wrapper__content {
 	text-align: center;
 	padding: 1.2rem;
 	word-spacing: 0.1rem;
@@ -175,19 +177,20 @@ Header
 
 
 
-.skill__header{
+.skill__header {
 	margin-top: 3rem;
 }
-.skill__fig{
+.skill__fig {
 	margin: 30px auto;
-	width: 52%;
+	width: 65%;
 	padding: 0 4rem;
 
 }
-.skill__img{
+.skill__img {
 	height: 9rem;
 	width: 9rem;
-	margin: 10px;
+	/*margin: 10px;*/
+	margin-left: 25px;
 }
 
 
@@ -196,26 +199,30 @@ Header
 			project section
 ====================================*/
 
-
-.project__header{
-	margin-top: 3rem
+.project {
+	background-color: rgba(143,188,143,0.6);
+	padding-top: 30px;
 }
-.project__gallery{
+.project__header {
+	margin: 0;
+}
+.project__gallery {
 	padding: 40px;
 	margin: 0 auto;
 	width: 90%;
 }
-.gallery__item{
+.gallery__item {
 	width: 28%;
 	height: 50%;
 	margin: 20px;
 	transition: 0.5s ease-in-out;
+	box-shadow: 5px 10px rgba(0,0,0,0.6);
 }
-.gallery__item:hover{
-	transform: scale(1.5);
+.gallery__item:hover {
+	transform: scale(1.2);
 }
 
-.gallery__link{
+.gallery__link {
 	color: teal;
 	font-size: 12px;
 }
@@ -224,57 +231,70 @@ Header
 			footer section
 ====================================*/
 
-.contact{
-	background-color: teal;
-	height: 50vh; 
+.contact {
+	background-color: teal; 
 	padding: 20px;
 }
 .contact__me {
 	margin: 50px auto;
 	width: 40%;
 }
-.contact__header{
+.contact__header {
 	color: black;
-	padding-bottom: 30px;
+	padding-bottom: 15px;
+	margin-top: 1rem;
 }
-.contact__email{
+.contact__email {
 	text-align: center;
 }
-.contact__social{
+.contact__social {
 	text-align: center;
 }
-.social{
+.social {
 	display: flex;
-	margin:1rem 0 0 7rem;
+	margin:1rem 0 0 8rem;
 	
 }
-.social__item a{
+.social__item a {
 	border-radius: 50%;
 	border:1px solid white;
 	color: white;
-	font-size: 1.5rem;
-	padding: 5px;
-	margin: 0 20px;
+	font-size: 1.2rem;
+	display: flex;;
+	height: 40px;
+	width:40px;
+	justify-content: center;
+	align-items: center;
+	margin: 0 10px;
 }
-.contact__copyright{
+
+.contact__copyright {
 	text-align: center;
 	font-size: 12px;
-	margin-top: 20px;
+	margin-top: 30px;
 }
 
 
+/*================================================
+         media query for mobile phones
+================================================*/
 
-@media screen and (min-width: 320px) and (max-width: 640px){
+
+@media screen and (min-width: 320px) and (max-width: 720px){
 	
-	.hero, .about-me, ..project, .skill, .contact{
+	.hero, .about-me, .project, .skill, .contact{
 		width: auto;
 		float: none;
 	}
+
+/*	============================
+		hero section
+	============================*/
 	
-	.nav-menu{
+	.nav-menu {
 		display: none;
 	}
-	label{
+	label {
 		display: block;
 	}
 	#toggle::checked + ul {
@@ -284,37 +304,43 @@ Header
 
 	}
 
-	.hero__img{
+	.hero__img {
 		width: 3rem;
 		height: 3rem;
 	}
-	.top-navbar{
+	.top-navbar {
 		padding: 10px;
 		background-color: black;
 	}
-	.hero{
+	.hero {
 		width: 100vw;
 		background-position: center;
 		background-size: contain;
 		background-repeat: no-repeat;
 		background-attachment: initial;
 		height: 70vh;
-	}
-	.name-heading{
+	} 
+	.name-heading {
 		font-size: 20px;
 		font-weight: 500;
+		letter-spacing: 0.21rem;
+		text-shadow: 2px 2px black;
 	}
-	.info__para{
+	.info__para {
 		font-size: .7rem;
 		word-spacing: 0.3rem;
 		font-weight: 100;
 	}
-	.about-me{
+
+/*	=============================
+		about me
+	==============================*/
+	.about-me {
 		padding: 0;
 		height: 70vh;
 		position: relative;
 	}
-	.wrapper{
+	.wrapper {
 		padding: 0;
 		width: 90%;
 		position: absolute;
@@ -322,52 +348,98 @@ Header
 		top: 60%;
 		transform: translate(-50%, -60%);
 	}
-	.user-me{
+	.user-me {
 		width: 6rem;
 		height: 6rem;
+		margin-top: 30px;
 	}
-	.wrapper__header{
+	.wrapper__header {
 		margin: 20px;
 		font-size: 1rem;
 	}
-	.wrapper__content{
+	.wrapper__content {
 		padding: 0;
 	}
-	.project__gallery{
+	.project__gallery {
 		padding: 0;
 	}
-	.gallery__item{
-	width: 40%;
+	.gallery__item {
+	width: 90%;
 	height: 70%;
 	margin: 10px;
 	
 	}
-	.gallery__item:hover{
+	.gallery__item:hover {
 		transform: none;
 	}
-	.skill__fig{
+	.skill__fig {
 	margin: 30px auto;
 	width: 90%;
 	padding: 0;
 
 	}
-	.skill__img{
+	.skill__img {
 	height: 5rem;
 	width: 5rem;
-	margin: 0;
+/*	margin: 0;*/
+    margin-left: 21px;
 	}
 	.contact__me {
 	margin:0;
 	width: 100%;
 	}
-	.social{
-	margin:1rem 0 0 2rem;
+	.social {
+	/*margin:1rem 0 0 3.5rem;*/
+	margin: 16px auto;
+    width: 61%;
 	}
 	.contact__email,
-	.contact__social{
+	.contact__social {
 		font-size: 12px;
 	}
-	.social__item a{
-		margin: 0 15px;
+	.social__item a {
+		margin: 0 10px;
+		height: 30px;
+		width: 30px;
+		font-size: 1rem;
+	}
+}
+
+
+/*=========================================
+		media query for tabs
+========================================*/
+
+
+@media screen and (min-width: 720px) and (max-width: 1024px) {
+	.project__gallery {
+		width: 60%;
+		margin: 0 auto;
+		max-width: 1000px;
+	}
+	.top-navbar {
+		padding: 10px;
+		background-color: black;
+	}
+	.hero {
+		background-size: contain;
+	    background-repeat: no-repeat;
+	    background-attachment: local;
+	    height: 87vh;
+	}
+	.skill__fig {
+	margin: 30px auto;
+    display: flex;
+    width: 85%;
+	}
+	.gallery__item {
+		width: 38%;
+	}
+	.social {
+	margin: 1rem auto;
+    width: 83%;
+	}
+	.about-me {
+		padding: 0;
 	}
 }

@@ -1,84 +1,107 @@
 <!DOCTYPE html>
-<html>
-<head>
-	<title>Portfolio</title>
-	<link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
-	<meta charset="utf-8">
-	<meta name="viewport" content="width=device-width initial-scale=1.0">
-	<link href="https://fonts.googleapis.com/css?family=Anton|Luckiest+Guy|Average+Sans" rel="stylesheet"> 
-	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
-</head>
-<body>
-	<header class="hero">
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width initial-scale=1.0">
+		<title>Portfolio</title> <!-- <-title-> -->
+		<link rel="stylesheet" type="text/css" href="../assets/css/custom.css"> <!-- <-link main.css-> -->
+		<link href="https://fonts.googleapis.com/css?family=Anton|Luckiest+Guy|Average+Sans" rel="stylesheet"> 
+		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
+	</head>
+	<body>
+		<!-- <-Header-> -->
 		
-		<nav class="top-navbar">
-			<a href="index.html"><img class="hero__img" src="../assets/media/1.jpg"></a>
-			<label id="toggle"for="toggle">&#9776;</label>
-			<input id="toggle" type="checkbox">
-			<ul class="nav-menu">
-				<li class="nav-menu__item"><a href="#About">About</a></li>
-				<li class="nav-menu__item"><a href="#Project">Project</a></li>
-				<li class="nav-menu__item"><a href="#Skill">Skill</a></li>
-				<li class="nav-menu__item"><a href="/blog">Blog</a></li>
-			</ul>
-			
-		</nav>
-		<div class="info">
-			<h1 class="name-heading">ASHWANI GOSWAMI</h1>
-			<p class="info__para">I'm a web developer.</p>
-		</div>
-	</header>
-	<main>
-		<section class="primary-wrapper">
-			<div class="about-me">
-				<img class="user-me" src="../assets/media/3.png" alt="me">
-				<div class="wrapper" id="About">
-					<h2 class="wrapper__header">About Me</h2>
-					<p class="wrapper__content">Hi, I'm a web developer currently based in Dharamshala,Himachal Pradesh.I have a passion for web design and love to create for web and mobile devices. I'm creative and I am a good learner as I have the ego to learn new skills in designing for being a good developer.</p>
-				</div>
-			</div><hr>
-			
-			<div class="project" id="Project">
-				<h2 class="wrapper__header project__header">Project</h2>
-
-				<figure class="project__gallery">
-					<p>You can go through:<a class="gallery__link" href="https://github.com/ashwanig3">https://github.com/ashwanig3</a></p>
-					<img class="gallery__item" src="../assets/media/project1.png">
-					<img class="gallery__item" src="../assets/media/project2.png">
-					<img class="gallery__item" src="../assets/media/project3.png">
-					<img class="gallery__item" src="../assets/media/project4.png">
-					<img class="gallery__item" src="../assets/media/project5.png">
-					<img class="gallery__item" src="../assets/media/project6.png">
-					
-
-				</figure>
-			</div><hr>
-			<div class="skill" id="Skill">
-				<h2  class="wrapper__header skill__header">Skills</h2>
-				<figure class="skill__fig">
-					<img class="skill__img" src="../assets/media/html.png" alt="html5">
-					<img class="skill__img" src="../assets/media/css.svg" alt="css3">
-					<img class="skill__img" src="../assets/media/sass.png" alt="sass">
-				</figure>
-			</div>
-			
-		</section>
-	</main>
-	<footer class="contact">
-		<div class="contact__me">
-			<h2 class="wrapper__header contact__header">Get in touch</h2>
-			<p class="contact__email">Email:goswami17829@gmail.com</p><br>
-			<p class="contact__social">You can also find me here</p>
-			<nav class="bottom-navbar">
-				<ul class="social">
-					<li class="social__item"><a href="https://www.facebook.com/ashwanig3"><i class="fab fa-facebook-f"></i></a></li>
-					<li class="social__item"><a href="https://twitter.com/ashwanigg3"><i class="fab fa-twitter"></i></a></li>
-					<li class="social__item"><a href="https://www.linkedin.com/in/ashwani-goswami-b20b40169/"><i class="fab fa-linkedin-in"></i></a></li>
-					<li class="social__item"><a href="https://github.com/ashwanig3"><i class="fab fa-github"></i></a></li>
+		<header class="hero">
+			<nav class="top-navbar">
+				<a href="index.html"><img class="hero__img" src="../assets/media/1.jpg" alt="logo img"></a>
+				<label id="toggle"for="toggle">&#9776;</label>
+				<input id="toggle" type="checkbox">
+				<ul class="nav-menu">
+					<li class="nav-menu__item"><a href="#About">About</a></li>
+					<li class="nav-menu__item"><a href="#Project">Project</a></li>
+					<li class="nav-menu__item"><a href="#Skill">Skill</a></li>
+					<li class="nav-menu__item"><a href="#Blog">Blog</a></li>
 				</ul>
+				
 			</nav>
-			<p class="contact__copyright">copyright &copy;Ashwani goswami,2018</p>
-		</div>
-	</footer>
-</body>
+			<div class="info">
+				<h1 class="name-heading">ASHWANI GOSWAMI</h1>
+				<p class="info__para">I'm a web developer.</p>
+			</div>
+		</header>
+
+		<!-- <-main-section-> -->
+
+		<main>
+			<!-- <-About-section-> -->
+			
+			<section class="primary-wrapper">
+				<div class="about-me">
+					<img class="user-me" src="../assets/media/3.png" alt="img-about">
+					<div class="wrapper" id="About">
+						<h2 class="wrapper__header">About Me</h2>
+						<p class="wrapper__content">Hi, I'm a web developer currently based in Dharamshala,Himachal Pradesh.I have a passion for web design and love to create for web and mobile devices. I'm creative and I am a good learner as I have the ego to learn new skills in designing for being a good developer.</p>
+					</div>
+				</div><!-- <hr> -->
+
+				<!-- <-project-gallery> -->
+
+				<div class="project" id="Project">
+					<h2 class="wrapper__header project__header">Project</h2>
+
+					<figure class="project__gallery">
+						<p>You can go through:<a class="gallery__link" href="https://github.com/ashwanig3">https://github.com/ashwanig3</a></p>
+						<img class="gallery__item" src="../assets/media/project1.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project2.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project3.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project4.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project5.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project6.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project7.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project8.png" alt="project-screenshot">
+						<img class="gallery__item" src="../assets/media/project9.png" alt="project-screenshot">
+
+					</figure>
+				</div><!-- <hr>
+ -->
+				<!-- <-skill-section-> -->
+
+				<div class="skill" id="Skill">
+					<h2  class="wrapper__header skill__header">Skills</h2>
+					<figure class="skill__fig">
+						<img class="skill__img" src="../assets/media/html.png" alt="html5-img">
+						<img class="skill__img" src="../assets/media/css.svg" alt="css3-img">
+						<img class="skill__img" src="../assets/media/sass.png" alt="sass-img">
+						<img class="skill__img" src="../assets/media/js.png" alt="js-img">
+					</figure>
+				</div>
+				
+			</section>
+		</main>
+
+		<!-- <-Footer-section-> -->
+
+		<footer class="contact">
+
+			<!-- <-contact-me-> -->
+			<div class="contact__me">
+				<h2 class="wrapper__header contact__header">Get in touch</h2>
+				<p class="contact__email">Email:goswami17829@gmail.com</p><br>
+				<p class="contact__social">You can also find me here:</p>
+				<nav class="bottom-navbar">
+					<ul class="social">
+						<li class="social__item">
+							<a href="https://www.facebook.com/ashwanig3">
+								<i class="fab fa-facebook-f"></i>
+							</a>
+						</li>
+						<li class="social__item"><a href="https://twitter.com/ashwanigg3"><i class="fab fa-twitter"></i></a></li>
+						<li class="social__item"><a href="https://www.linkedin.com/in/ashwani-goswami-b20b40169/"><i class="fab fa-linkedin-in"></i></a></li>
+						<li class="social__item"><a href="https://github.com/ashwanig3"><i class="fab fa-github"></i></a></li>
+					</ul>
+				</nav>
+				<p class="contact__copyright">copyright &copy;Ashwani goswami,2018</p>
+			</div>
+		</footer>
+	</body>
 </html>
