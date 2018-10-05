@@ -98,7 +98,7 @@ Header
 }
 .hero {
 	position: relative;
-	background-image: url(../../assets/media/3.JPG);
+	background-image: url(../assets/media/3.JPG);
 	height: 100vh;
 	background-position: 60% 50%;
 	background-size: cover;
@@ -255,8 +255,13 @@ Header
 	margin:1rem 0 0 8rem;
 	
 }
+
+.social__item{
+	list-style: none;
+}
 .social__item a {
 	border-radius: 50%;
+	text-decoration: none;
 	border:1px solid white;
 	color: white;
 	font-size: 1.2rem;
@@ -266,6 +271,11 @@ Header
 	justify-content: center;
 	align-items: center;
 	margin: 0 10px;
+	transform: rotate(0deg);
+	transition: all 0.5s ease-in-out;
+}
+.social__item a:hover {
+	transform: rotate(360deg);
 }
 
 .contact__copyright {
@@ -403,6 +413,9 @@ Header
 		width: 30px;
 		font-size: 1rem;
 	}
+	.social__item a:hover {
+		transform: rotate(0deg);
+	}
 }
 
 
@@ -441,5 +454,8 @@ Header
 	}
 	.about-me {
 		padding: 0;
+	}
+	.social__item a:hover {
+		transform: rotate(0deg);
 	}
 }
