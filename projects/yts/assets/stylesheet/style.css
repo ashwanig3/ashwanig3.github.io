@@ -1,0 +1,261 @@
+/* CSS Reset */
+
+:root {
+  font-size: 16px;
+}
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+  line-height: 1;
+  font-family: 'Arimo',Arial,Helvetica,"Lucida Grande",sans-serif;
+  background: #333
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+a:link, 
+a:visited {
+  text-decoration: none;
+}
+
+
+
+/* Primary Header */
+
+.heading__top {
+  position: sticky;
+  display: flex;
+  justify-content: space-around;
+  padding: 15px ;
+  background: #1d1d1d;
+}
+
+.heading__top img {  
+  height: 40px;  
+}
+
+
+.header__navbar {    
+  min-width: 600px;
+}
+
+.nav__links {
+  display: flex;
+  align-items: center;
+}
+
+ul li a {
+  color: #919191;
+  font-weight: bold;  
+  font-size: 0.85em;
+}
+
+ul li a:hover {
+  color: #fff;
+  transition: all 0.4s ease-in-out;
+}
+
+ul li {
+  flex: 1;
+}
+
+.nav__links li:nth-child(3) {
+  flex: 1.5;
+}
+
+input[type="search"] {
+  background-color: transparent;
+  border: none;
+  font-weight: bold;
+  max-width: 250px;  
+  color: #919191;
+}
+
+input:focus {
+  outline: none;
+}
+
+.nav__search {  
+  display: flex;
+  border: 2px solid rgb(54, 54, 54);
+  padding: 6px;
+  border-radius: 20px;
+  margin-right: 15px; 
+  
+}
+
+.fa-search {
+  color: #919191;
+}
+
+.hilight {
+  color: #fff;
+}
+
+.hilight:hover {
+  color: #919191;
+  transition: all 0.4s ease-in-out;
+}
+
+i {
+  padding: 5px;
+}
+
+
+/* Card  */
+
+main {
+  /* max-width: 1000px; */
+  margin: 4em auto;
+}
+
+.movie-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));  
+  place-content: center center;
+  place-items: center center;  
+  padding: 0 100px;
+}
+
+.movie-wrapper {
+  margin: 30px 0; 
+}
+
+.movie_cover {
+  border: 5px solid #fff; 
+  margin-bottom: 5px;
+  border-radius: 5px;
+  overflow: hidden;
+}
+
+.movie_cover img {
+  transform: scale(1);
+}
+
+.movie_cover img:hover {
+  transform: scale(1.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.data-wrap {
+  display: flex;
+  justify-content: space-between;  
+  align-items: flex-end;
+  margin-bottom: 10px;
+}
+.movie-name {
+  display: inline-block;
+  color: #fff;
+  font-weight: 600;
+  font-size: 0.8em;  
+  margin-bottom: 5px;
+}
+
+.movie-trailer {
+  border: 1px solid #919191;
+  border-radius: 4px;
+  padding: 5px 10px;  
+}
+
+.release-year {
+  color: #919191;
+}
+
+.movie-rating {  
+  color: #fff;
+  font-weight: 900;
+  align-self: flex-end;
+}
+
+.fa-plus-circle {
+  color: #fff;
+  align-self: flex-end;
+  cursor: pointer;  
+  transform: scale(1);
+  /* transition: all 1ss ease-in-out; */
+}
+
+.fa-plus-circle:active {
+  color: green;
+}
+
+.fa-plus-circle:hover {
+  transform: scale(1.1);
+  transition: transform 0.1s ease-in-out; 
+}
+
+.fa-star {
+  color: gold;
+}
+
+/* Tooltip */
+
+
+
+/* Primary Footer */
+
+.foot {  
+  background: #1d1d1d;
+
+}
+
+.foot__grid {
+  margin: 0px auto;
+  padding: 40px 0;
+  max-width: 600px;
+  display: grid;  
+  grid-template-columns: repeat(auto-fit, auto);
+  place-items: center center;
+  grid-auto-flow: column;
+  
+}
+
+.foot-grid li a {
+  margin: 0 5px;
+}
+
+
+.foot ul li span {
+  color: #fff;      
+}
+
