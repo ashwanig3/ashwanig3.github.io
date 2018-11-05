@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>clock</title>
+	<link rel="stylesheet" type="text/css" href="assets/main.css">
+</head>
+<body>
+	<div class="clock">
+		<span class="twelve">12</span>
+		<span class="six">6</span>
+		<span class="three">3</span>
+		<span class="nine">9</span>
+		<div id="hour" class="hour__hand"></div>
+		<div id="minute" class="minute__hand"></div>
+		<div id="second" class="second__hand"></div>
+	</div>
+	<script type="text/javascript">
+		var secondHand = document.getElementById('second');
+		var minuteHand = document.getElementById('minute');	
+		var hourHand = document.getElementById('hour');			
+		function clock(){
+			var time = new Date;
+
+			var seconds = time.getSeconds();
+			var hours = time.getHours();
+			var minutes = time.getMinutes();
+
+			secondHand.style.transform = `rotate(${(seconds/60) * 360 +90}deg)`;
+			minuteHand.style.transform = `rotate(${(minutes/60) * 360 + 90}deg)`;
+			hourHand.style.transform = `rotate(${(hours/60) * 360 + 165}deg)`;
+		}
+		setInterval(clock,1000);
+		// clock();
+	</script>
+</body>
+</html>
