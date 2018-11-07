@@ -1,0 +1,257 @@
+/* Embed Font */
+@import url('https://fonts.googleapis.com/css?family=Roboto:300,400');
+
+
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+*,
+*.before,
+*.after{
+	margin: 0px;
+	padding: 0px;
+}
+
+/*----------------------------------------------------------------------reset complet---------------------------------------------------------*/
+.layout .leftside{
+  	box-sizing: border-box;
+	display: inline-block;
+	width: 50%;
+
+}
+.layout .rightside{
+	box-sizing: border-box;
+	display: inline-block;
+	width: 50%;
+	}
+
+.heading, .description{
+	width: 100%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.newsbox{
+    /*background: skyblue;*/
+
+    position: fixed;
+    width: 100%;
+    /* height: 20px; */
+    font-family: 'Abril Fatface', cursive;
+    font-size: 40px;
+    padding: 20px;
+    color: white;
+    z-index: 2;
+}
+
+img {
+	width: 100%;
+	height: 95px;
+	text-align: center;
+	position: fixed;
+}
+
+.button {
+	width: 130px;
+	background: #01564e;
+	color: white;
+	padding: 5px ;
+	padding: 14px 20px;
+	margin: 8px 0;
+	border: none;
+	border-radius: 4px;
+	cursor: pointer;
+	font-size: 1.5rem;
+}
+
+.button:hover {
+	color: #01564e;
+	background-color: #fff;
+	box-sizing: border-box;
+}
+
+
+.layout{
+    position: relative;
+	/*top: 75px;*/
+	bottom: 5px;
+	z-index: 0;
+	top: 80px;
+
+}
+label {
+	display: block;
+	margin-bottom: 5px;
+}
+
+footer {
+    position: absolute;
+    bottom: 0;
+    color: #fff;
+    width: 100%;
+    background: black;
+}
+
+.foot {
+    padding: 20px 0px 20px 20px;
+}
+
+.feed
+{
+	font-size: 20px;
+	padding: 20px 30px;
+}
+
+.clearfix:before,
+.clearfix:after {
+  content: "";
+  display: table;
+} 
+.clearfix:after {
+  clear: both;
+}
+.clearfix {
+  zoom: 1; /* For IE 6/7 (trigger hasLayout) */
+}
+
+
+/* Right Hand Side Part */
+.rightside{
+	background-color: #b8c2c3;
+	height: calc(100vh - 99px);
+	overflow: auto;
+	padding: 20px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.rightside_header {
+	text-align: center;
+	font-size: 2.5rem;
+	font-weight: 300;
+}
+
+.news-item-heading {
+	font-family: serif;
+	margin: 1.3rem 0;
+}
+
+.news_link {
+	color: #000;
+	text-decoration: none;
+	font-size: 1.7rem;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.1rem;
+}
+
+.news_number {
+	margin: 0 0.5rem;
+	font-size: 1.7rem;
+	font-family: 'Roboto', sans-serif;
+}
+
+.news_link:hover {
+	text-decoration: underline;
+	color: #01564e;
+}
+
+/* lefthandside */
+.leftside{
+	/*display: inline-block;*/
+	float: left;
+	background-color: lightblue;
+	padding: 2.5em;
+	height: calc(100vh - 99px);
+}
+
+.heading, .description {
+	/* border: none; */
+	border-radius: 5px;
+	font-size: 22px;
+	border-bottom: 2px solid #01564e;
+}
+
+.heading:focus, .description:focus {
+	outline: 0;
+}
+
+.description {
+	resize: none;
+	font-size: 12px;
+}
+
+/* Labels */
+label {
+	font-size: 1.5rem;
+	font-weight: 300;
+	font-family: 'Roboto', sans-serif;
+}
+
+/* News Page */
+.news_item_heading, .news_item_description {
+	font-family: 'Roboto', sans-serif;
+}
+
+.news_item_heading {
+	font-size: 2.5rem;
+	width: 70%;
+	margin: 0 auto;
+	padding-top: 130px;
+}
+
+.news_item_description {
+	width: 70%;
+	margin: 2rem auto;
+	font-size: 1.2rem;
+	line-height: 1.5rem;
+	word-spacing: 0.5rem;
+}
