@@ -184,6 +184,9 @@ Header
 	margin: 30px auto;
 	width: 65%;
 	padding: 0 4rem;
+	display: grid;
+	grid-template-columns: repeat(3, 1fr);
+	grid-gap: 30px;
 
 }
 .skill__img {
@@ -191,6 +194,7 @@ Header
 	width: 9rem;
 	/*margin: 10px;*/
 	margin-left: 25px;
+	box-shadow: 1px 6px 11px 7px #bdc0c8;
 }
 
 
@@ -282,6 +286,34 @@ Header
 	text-align: center;
 	font-size: 12px;
 	margin-top: 30px;
+}
+
+
+/* =================================================
+Blog page
+================================================= */
+.blog-section {
+	background-color: rgba(143,188,143,0.6);
+	height: 100vh;
+}
+.blog-navbar {
+	display: grid;
+    grid-template-columns: 80% 1fr;
+    padding: 30px;
+}
+.blog_list-item {
+	font-size: 30px;
+}
+.blog-heading {
+	font-size: 40px;
+	font-weight: 500;
+	color: teal;
+	font-family: 'Luckiest Guy', cursive;
+}
+.blog_list {
+	width: 85%;
+	margin: 30px auto;
+	line-height: 50px;
 }
 
 

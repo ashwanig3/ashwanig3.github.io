@@ -2,16 +2,27 @@
 <html>
 <head>
 	<title>Blog</title>
-	<link rel="stylesheet" type="text/css" href="../assets/main.css">
+	<link rel="stylesheet" type="text/css" href="../assets/css/custom.css">
 	<meta charset="utf-8">
 	<meta name="viewport" content="width=device-width initial-scale=1.0">
 	<link href="https://fonts.googleapis.com/css?family=Anton|Luckiest+Guy|Average+Sans" rel="stylesheet"> 
 	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.2.0/css/all.css" integrity="sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ" crossorigin="anonymous">
 </head>
 <body>
-	{% for post in site.posts %}
-	<h1>{{ post.title }}</h1>
-	<a href="{{post.url}}">Blog 1</a>
-	{% endfor %}
+	<main class="blog-section">
+			<nav class="top-navbar blog-navbar">
+					<a href="./home.html"><img class="hero__img" src="../assets/media/1.jpg" alt="logo img"></a>
+					<ul class="nav-menu">
+						<li class="nav-menu__item"><a href="./home.html">back</a></li>
+					</ul>
+					
+				</nav>
+		<div class="blog_list">
+			<h1 class="blog-heading">Blogs</h1>
+			<a class="blog_list-item" href="{{post.url}}">Javascript Functions:Introduction</a>
+		</div>
+		
+	</main>
+		
 </body>
 </html>
